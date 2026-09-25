@@ -1,3 +1,27 @@
+# Laravel wiki package (Stellar Clicker fork)
+
+> [!WARNING]
+> Archived and no longer maintained; kept for reference. This is my April 2016 fork of taskforcedev/wiki for Laravel 5, not the official package, and its routes are hardcoded to the Stellar Clicker wiki subdomain. The upstream project is [taskforcedev/wiki](https://github.com/taskforcedev/wiki), and its original README is below.
+
+## Overview
+
+I forked this Laravel 5 wiki package in April 2016 while building the Stellar Clicker website, because I wanted the wiki on its own subdomain instead of under `/wiki` on the main site. My changes are small:
+
+- **Subdomain routing** in `src/Http/routes.php`: the package's routes sit inside a `wiki.stellar.polymorphixgaming.com` domain group and drop the `wiki/` prefix, so pages live at the subdomain's root
+- **Package name** in `composer.json` changed to `angelahnicole/wiki` so I could pull the fork in with Composer
+
+My commits are the five from April 4, 2016 by angelahnicole; everything else is upstream.
+
+**Tech:** PHP, Laravel 5
+
+The website itself is in [um-csci412-stellar-clicker-web](https://github.com/angiebrr/um-csci412-stellar-clicker-web).
+
+The package is GPL-3.0 licensed, like upstream; see [LICENSE](LICENSE).
+
+---
+
+## Original wiki README
+
 wiki
 ====
 Laravel 5 Wiki Package
